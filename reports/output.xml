@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20191122 17:51:22.544" generator="Robot 3.1.1 (Python 2.7.12 on linux2)">
+<suite source="/suites" id="s1" name="Suites">
+<suite source="/suites/robot_framework.robot" id="s1-s1" name="Robot Framework">
+<test id="s1-s1-t1" name="Foo Test Case">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>%{USERNAME}</arg>
+</arguments>
+<msg timestamp="20191122 17:51:22.574" level="INFO">Ipatios Asmanidis</msg>
+<status status="PASS" endtime="20191122 17:51:22.574" starttime="20191122 17:51:22.574"></status>
+</kw>
+<doc>Created by Ipatios Asmanidis</doc>
+<tags>
+<tag>RobotTestCase</tag>
+<tag>RobotWebPage</tag>
+</tags>
+<status status="PASS" endtime="20191122 17:51:22.574" critical="yes" starttime="20191122 17:51:22.573"></status>
+</test>
+<status status="PASS" endtime="20191122 17:51:22.575" starttime="20191122 17:51:22.571"></status>
+</suite>
+<suite source="/suites/virtual_display.robot" id="s1-s2" name="Virtual Display">
+<test id="s1-s2-t1" name="Open Google">
+<kw name="Start Virtual Display" library="XvfbRobot">
+<doc>Starts virtual display which will be
+ destroyed after test execution will be end</doc>
+<arguments>
+<arg>1920</arg>
+<arg>1080</arg>
+</arguments>
+<msg timestamp="20191122 17:51:23.487" level="INFO">Using virtual display: '1920x1080x24'</msg>
+<status status="PASS" endtime="20191122 17:51:24.150" starttime="20191122 17:51:23.487"></status>
+</kw>
+<kw name="Open Chrome Browser">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>sys.modules['selenium.webdriver'].ChromeOptions()</arg>
+<arg>sys, selenium.webdriver</arg>
+</arguments>
+<assign>
+<var>${options}</var>
+</assign>
+<msg timestamp="20191122 17:51:24.152" level="INFO">${options} = &lt;selenium.webdriver.chrome.options.Options object at 0x7f6c704e3810&gt;</msg>
+<status status="PASS" endtime="20191122 17:51:24.152" starttime="20191122 17:51:24.151"></status>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<arguments>
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--no-sandbox</arg>
+</arguments>
+<status status="PASS" endtime="20191122 17:51:24.152" starttime="20191122 17:51:24.152"></status>
+</kw>
+<kw name="Create Dictionary" library="BuiltIn">
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<arguments>
+<arg>download.default_directory=${TMP_PATH}</arg>
+</arguments>
+<assign>
+<var>${prefs}</var>
+</assign>
+<msg timestamp="20191122 17:51:24.153" level="INFO">${prefs} = {u'download.default_directory': u'/tmp'}</msg>
+<status status="PASS" endtime="20191122 17:51:24.153" starttime="20191122 17:51:24.152"></status>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<arguments>
+<arg>${options}</arg>
+<arg>add_experimental_option</arg>
+<arg>prefs</arg>
+<arg>${prefs}</arg>
+</arguments>
+<status status="PASS" endtime="20191122 17:51:24.153" starttime="20191122 17:51:24.153"></status>
+</kw>
+<kw name="Create Webdriver" library="Selenium2Library">
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<arguments>
+<arg>Chrome</arg>
+<arg>chrome_options=${options}</arg>
+</arguments>
+<msg timestamp="20191122 17:51:24.154" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20191122 17:51:28.461" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" endtime="20191122 17:51:28.461" starttime="20191122 17:51:28.460"></status>
+</kw>
+<msg timestamp="20191122 17:51:28.462" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 74
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Linux 5.0.0-36-generic x86_64)
+</msg>
+<status status="FAIL" endtime="20191122 17:51:28.462" starttime="20191122 17:51:24.154"></status>
+</kw>
+<status status="FAIL" endtime="20191122 17:51:28.462" starttime="20191122 17:51:24.151"></status>
+</kw>
+<status status="FAIL" endtime="20191122 17:51:28.463" critical="yes" starttime="20191122 17:51:23.486">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 74
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Linux 5.0.0-36-generic x86_64)
+</status>
+</test>
+<status status="FAIL" endtime="20191122 17:51:28.464" starttime="20191122 17:51:22.575"></status>
+</suite>
+<status status="FAIL" endtime="20191122 17:51:28.466" starttime="20191122 17:51:22.547"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="1">Critical Tests</stat>
+<stat fail="1" pass="1">All Tests</stat>
+</total>
+<tag>
+<stat fail="0" pass="1">RobotTestCase</stat>
+<stat fail="0" pass="1">RobotWebPage</stat>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="Suites" pass="1">Suites</stat>
+<stat fail="0" id="s1-s1" name="Robot Framework" pass="1">Suites.Robot Framework</stat>
+<stat fail="1" id="s1-s2" name="Virtual Display" pass="0">Suites.Virtual Display</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
