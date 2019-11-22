@@ -9,4 +9,4 @@ docker run --rm \
            -v "$PWD/reports":/reports \
            --security-opt seccomp:unconfined \
            --shm-size "256M" \
-           ypasmk/robot-framework
+           daus1418/selenium.v1.0
