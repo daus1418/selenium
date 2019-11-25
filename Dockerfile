@@ -1,6 +1,6 @@
 FROM ubuntu:16.04
 
-MAINTAINER "Ipatios Asmanidis" <ypasmk@gmail.com>
+MAINTAINER "David Useche" <duseche@onvacation.com>
 
 LABEL name="Docker build for acceptance testing using the robot framework"
 

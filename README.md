@@ -5,15 +5,15 @@ Quick Start
 
 Clone this repository
 
-    git clone git@github.com:ypasmk/robot-framework-docker.git
+    git clone https://github.com/daus1418/selenium.git
 
 Pull the image.
 
-    docker pull ypasmk/robot-framework
+    docker pull daus1418/selenium.v1.0
     
 Run the tests
 
-    cd robot-framework-docker && ./run_tests.sh
+    cd selenium && ./run_tests.sh
     
 
 Contents
@@ -41,7 +41,7 @@ Also have a look at **suites/virtual_display.robot**
 HttpLibrary.HTTP
 ----------------
 
-More details here https://github.com/peritus/robotframework-httplibrary
+More details here https://github.com/daus1418/selenium
 
 Example:
 
@@ -57,16 +57,7 @@ robotframework-sshlibrary
 More details here http://robotframework.org/SSHLibrary/latest/SSHLibrary.html
 
 
-robotframework-excellibrary
----------------------------
-
-More details here http://navinet.github.io/robotframework-excellibrary/ExcelLibrary-KeywordDocumentation.html
 
 
 
-
-**ENJOY**
-
-
-*For any requests or changes please open issues or create pull requests :)*
 
