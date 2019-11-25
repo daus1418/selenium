@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -e
 
-CMD="robot --console verbose --outputdir /reports /suites"
+CMD="pabot --processes 4 --outputdir reports suites/*.robot"
 
 echo ${CMD}
 

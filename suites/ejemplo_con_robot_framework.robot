@@ -6,8 +6,7 @@ Library     XvfbRobot
 ${TMP_PATH}                 /tmp
 
 *** Test Cases ***
-G001 Open Google buscar casos prueba
-    Start Virtual Display    1920    1080
+G001 Open Google buscar casos prueba    
     Open Browser    https://www.google.com.co/    chrome
     Wait Until Element Is Visible   xpath=//*[@id="hplogo"]
     Input Text    xpath=//*[@id="tsf"]/div[2]/div[1]/div[1]/div/div[2]/input    casos de prueba
@@ -25,6 +24,7 @@ G002 Click en foto
 *** Keywords ***
 Open Browser
     [Arguments]    ${url}    ${browser}
+    Start Virtual Display    1920    1080
     ${options}  Evaluate  sys.modules['selenium.webdriver'].ChromeOptions()  sys, selenium.webdriver
     Call Method  ${options}  add_argument  --no-sandbox
     ${prefs}    Create Dictionary    download.default_directory=${TMP_PATH}
