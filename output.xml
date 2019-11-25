@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20191125 10:37:13.950" generator="Robot 3.1.2 (Python 2.7.15+ on linux2)">
+<suite source="/home/duseche/automatizacion/selenium/suites/robot_framework.robot" id="s1" name="Robot Framework">
+<test id="s1-t1" name="Foo Test Case">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>%{robotVar}</arg>
+</arguments>
+<msg timestamp="20191125 10:37:13.972" level="FAIL">Environment variable '%{robotVar}' not found.</msg>
+<status status="FAIL" endtime="20191125 10:37:13.972" starttime="20191125 10:37:13.970"></status>
+</kw>
+<doc>Created by Ipatios Asmanidis</doc>
+<tags>
+<tag>RobotTestCase</tag>
+<tag>RobotWebPage</tag>
+</tags>
+<status status="FAIL" endtime="20191125 10:37:13.972" critical="yes" starttime="20191125 10:37:13.970">Environment variable '%{robotVar}' not found.</status>
+</test>
+<status status="FAIL" endtime="20191125 10:37:13.972" starttime="20191125 10:37:13.951"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="0">Critical Tests</stat>
+<stat fail="1" pass="0">All Tests</stat>
+</total>
+<tag>
+<stat fail="1" pass="0">RobotTestCase</stat>
+<stat fail="1" pass="0">RobotWebPage</stat>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="Robot Framework" pass="0">Robot Framework</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
