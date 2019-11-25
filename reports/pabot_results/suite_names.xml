@@ -1,49 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot rpa="false" generated="20191125 17:21:33.481" generator="Robot 3.1.1 (Python 2.7.12 on linux2)">
+<robot rpa="false" generated="20191125 20:54:08.792" generator="Robot 3.1.1 (Python 2.7.12 on linux2)">
 <suite id="s1" name="Suites">
 <suite source="/suites/ejemplo_con_robot_framework.robot" id="s1-s1" name="Ejemplo Con Robot Framework">
 <test id="s1-s1-t1" name="G001 Open Google buscar casos prueba">
 <kw name="No Operation" library="BuiltIn">
 <doc>Does absolutely nothing.</doc>
-<status status="NOT_RUN" endtime="20191125 17:21:34.080" starttime="20191125 17:21:34.080"></status>
+<status status="NOT_RUN" endtime="20191125 20:54:09.333" starttime="20191125 20:54:09.333"></status>
 </kw>
-<status status="PASS" endtime="20191125 17:21:34.080" critical="yes" starttime="20191125 17:21:34.079"></status>
+<status status="PASS" endtime="20191125 20:54:09.333" critical="yes" starttime="20191125 20:54:09.332"></status>
 </test>
 <test id="s1-s1-t2" name="G002 Click en foto">
 <kw name="No Operation" library="BuiltIn">
 <doc>Does absolutely nothing.</doc>
-<status status="NOT_RUN" endtime="20191125 17:21:34.081" starttime="20191125 17:21:34.081"></status>
+<status status="NOT_RUN" endtime="20191125 20:54:09.334" starttime="20191125 20:54:09.334"></status>
 </kw>
-<status status="PASS" endtime="20191125 17:21:34.081" critical="yes" starttime="20191125 17:21:34.081"></status>
+<status status="PASS" endtime="20191125 20:54:09.334" critical="yes" starttime="20191125 20:54:09.334"></status>
 </test>
-<status status="PASS" endtime="20191125 17:21:34.082" starttime="20191125 17:21:33.501"></status>
+<status status="PASS" endtime="20191125 20:54:09.335" starttime="20191125 20:54:08.813"></status>
 </suite>
 <suite source="/suites/robot_framework.robot" id="s1-s2" name="Robot Framework">
 <test id="s1-s2-t1" name="Foo Test Case">
 <kw name="No Operation" library="BuiltIn">
 <doc>Does absolutely nothing.</doc>
-<status status="NOT_RUN" endtime="20191125 17:21:34.085" starttime="20191125 17:21:34.085"></status>
+<status status="NOT_RUN" endtime="20191125 20:54:09.338" starttime="20191125 20:54:09.338"></status>
 </kw>
 <doc>Created by Ipatios Asmanidis</doc>
 <tags>
 <tag>RobotTestCase</tag>
 <tag>RobotWebPage</tag>
 </tags>
-<status status="PASS" endtime="20191125 17:21:34.085" critical="yes" starttime="20191125 17:21:34.084"></status>
+<status status="PASS" endtime="20191125 20:54:09.338" critical="yes" starttime="20191125 20:54:09.337"></status>
 </test>
-<status status="PASS" endtime="20191125 17:21:34.085" starttime="20191125 17:21:34.082"></status>
+<status status="PASS" endtime="20191125 20:54:09.338" starttime="20191125 20:54:09.336"></status>
 </suite>
 <suite source="/suites/virtual_display.robot" id="s1-s3" name="Virtual Display">
 <test id="s1-s3-t1" name="Open Google">
 <kw name="No Operation" library="BuiltIn">
 <doc>Does absolutely nothing.</doc>
-<status status="NOT_RUN" endtime="20191125 17:21:34.089" starttime="20191125 17:21:34.089"></status>
+<status status="NOT_RUN" endtime="20191125 20:54:09.342" starttime="20191125 20:54:09.342"></status>
 </kw>
-<status status="PASS" endtime="20191125 17:21:34.089" critical="yes" starttime="20191125 17:21:34.088"></status>
+<status status="PASS" endtime="20191125 20:54:09.342" critical="yes" starttime="20191125 20:54:09.341"></status>
 </test>
-<status status="PASS" endtime="20191125 17:21:34.089" starttime="20191125 17:21:34.086"></status>
+<status status="PASS" endtime="20191125 20:54:09.342" starttime="20191125 20:54:09.339"></status>
 </suite>
-<status status="PASS" endtime="20191125 17:21:34.090" starttime="20191125 17:21:33.482"></status>
+<status status="PASS" endtime="20191125 20:54:09.343" starttime="20191125 20:54:08.794"></status>
 </suite>
 <statistics>
 <total>
@@ -62,11 +62,11 @@
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20191125 17:21:33.477" level="ERROR">Error in file '/suites/ejemplo_con_robot_framework.robot': Non-existing setting ''.</msg>
-<msg timestamp="20191125 17:21:33.478" level="ERROR">Error in file '/suites/robot_framework.robot': Non-existing setting ''.</msg>
-<msg timestamp="20191125 17:21:33.479" level="ERROR">Error in file '/suites/virtual_display.robot': Non-existing setting ''.</msg>
-<msg timestamp="20191125 17:21:33.501" level="ERROR">Error in file '/suites/ejemplo_con_robot_framework.robot': Setting variable '' failed: Invalid variable name ''.</msg>
-<msg timestamp="20191125 17:21:34.083" level="ERROR">Error in file '/suites/robot_framework.robot': Setting variable '' failed: Invalid variable name ''.</msg>
-<msg timestamp="20191125 17:21:34.086" level="ERROR">Error in file '/suites/virtual_display.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20191125 20:54:08.786" level="ERROR">Error in file '/suites/ejemplo_con_robot_framework.robot': Non-existing setting ''.</msg>
+<msg timestamp="20191125 20:54:08.788" level="ERROR">Error in file '/suites/robot_framework.robot': Non-existing setting ''.</msg>
+<msg timestamp="20191125 20:54:08.789" level="ERROR">Error in file '/suites/virtual_display.robot': Non-existing setting ''.</msg>
+<msg timestamp="20191125 20:54:08.813" level="ERROR">Error in file '/suites/ejemplo_con_robot_framework.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20191125 20:54:09.336" level="ERROR">Error in file '/suites/robot_framework.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20191125 20:54:09.339" level="ERROR">Error in file '/suites/virtual_display.robot': Setting variable '' failed: Invalid variable name ''.</msg>
 </errors>
 </robot>
