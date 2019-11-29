@@ -1,15 +1,15 @@
 # robot-framework-docker
 
-Quick Start
+Inicio rápido
 ===========
 
-Clone this repository
+Clone este repositorio
 
-    git clone https://github.com/daus1418/selenium.git
+    git clone http://192.168.1.100/onvacation/docker/test-funcionales.git
 
 Pull the image.
 
-    docker pull daus1418/selenium.v1.0
+    docker pull onvacation/docker
     
 Run the tests
 
@@ -19,14 +19,14 @@ Run the tests
 Contents
 ========
 
-This image contains the following to facilitate robot testing
+Esta imagen contiene lo siguiente para facilitar la prueba del robot
 
 Xvfb
 ----
 
-You can use it to start a visual display and fire up a browser for UI testing.
+Puede usarlo para iniciar una visualización y encender un navegador para realizar pruebas de IU.
  
-Example (suites/virtual_display.robot):
+Ejemplo (suites/ejemplo_con_robot_framework.robot):
 
     Start Virtual Display    1920    1080
     
@@ -34,27 +34,17 @@ Example (suites/virtual_display.robot):
 Selenium2Library
 ----------------
 
-More details here  http://robotframework.org/Selenium2Library/Selenium2Library.html
+Mas detalles aquí  http://robotframework.org/Selenium2Library/Selenium2Library.html
 
-Also have a look at **suites/virtual_display.robot**
+También eche un vistazo a **suites/ejemplo_con_robot_framework.robot**
 
-HttpLibrary.HTTP
-----------------
 
-More details here https://github.com/daus1418/selenium
 
-Example:
-
-    Create Http Context     api.some-end-point.com
-    GET                     /some/service/that/supports/get
-    Verify Status           200
-    ${response}=            Get Response Body
-    [return]                ${response}
     
-robotframework-sshlibrary
+robotframework
 -------------------------
 
-More details here http://robotframework.org/SSHLibrary/latest/SSHLibrary.html
+Mas detalles aquí https://github.com/robotframework/QuickStartGuide/blob/master/QuickStart.rst
 
 
 

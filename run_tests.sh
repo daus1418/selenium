@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 docker run --rm \
-           -e USERNAME="David" \
+           -e USERNAME="onvacation" \
            --net=host \
            -v "$PWD/output":/output \
            -v "$PWD/suites":/suites \
