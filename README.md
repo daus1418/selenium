@@ -13,7 +13,7 @@ Pull the image.
     
 Run the tests
 
-    cd selenium && ./run_tests.sh
+    cd test-funcionales && ./run_tests.sh
     
 
 Contents

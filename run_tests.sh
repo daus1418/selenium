@@ -8,5 +8,5 @@ docker run --rm \
            -v "$PWD/scripts":/scripts \
            -v "$PWD/reports":/reports \
            --security-opt seccomp:unconfined \
-           --shm-size "256M" \
+           --shm-size "1024M" \
            onvacation/docker
